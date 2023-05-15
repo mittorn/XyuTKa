@@ -2110,6 +2110,12 @@
     - depends:
         - 'autograd.numpy'
 
+- module-name: 'pyodbc'
+  implicit-imports:
+    - depends:
+        - 'hashlib'
+        - 'decimal'
+
 - module-name: 'pyparsing'
   anti-bloat:
     - description: 'remove pdb usage'
@@ -2148,6 +2154,11 @@
     dirs:
       - 'colors'
       - 'icons'
+
+- module-name: 'pyqtlet2'
+  data-files:
+    dirs:
+      - 'web'
 
 - module-name: 'pyreadstat._readstat_parser'
   implicit-imports:
